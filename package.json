@@ -1,0 +1,39 @@
+{
+  "name": "advent_of_code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:day01": "nodemon src/day01/solution.js",
+    "start:day02": "nodemon src/day02/solution.js",
+    "start:day03": "nodemon src/day03/solution.js",
+    "start:day04": "nodemon src/day04/solution.js",
+    "start:day05": "nodemon src/day05/solution.js",
+    "start:day06": "nodemon src/day06/solution.js",
+    "start:day07": "nodemon src/day07/solution.js",
+    "start:day08": "nodemon src/day08/solution.js",
+    "start:day09": "nodemon src/day09/solution.js",
+    "start:day10": "nodemon src/day10/solution.js",
+    "start:day11": "nodemon src/day11/solution.js",
+    "start:day12": "nodemon src/day12/solution.js",
+    "start:day13": "nodemon src/day13/solution.js",
+    "start:day14": "nodemon src/day14/solution.js",
+    "start:day15": "nodemon src/day15/solution.js",
+    "start:day16": "nodemon src/day16/solution.js",
+    "start:day17": "nodemon src/day17/solution.js",
+    "start:day18": "nodemon src/day18/solution.js",
+    "start:day19": "nodemon src/day19/solution.js",
+    "start:day20": "nodemon src/day20/solution.js",
+    "start:day21": "nodemon src/day21/solution.js",
+    "start:day22": "nodemon src/day22/solution.js",
+    "start:day23": "nodemon src/day23/solution.js",
+    "start:day24": "nodemon src/day24/solution.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
