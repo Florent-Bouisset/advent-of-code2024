@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs"
 import { join, dirname } from "node:path"
 import { fileURLToPath } from 'node:url';
 
-
+console.time("total-run-time")
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -44,3 +44,4 @@ for(let i = 0; i < colA.length; i++) {
 }
 
 console.log("Part 2 result is:", result2)
+console.timeEnd("total-run-time")

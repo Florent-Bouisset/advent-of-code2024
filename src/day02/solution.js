@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs"
 import { join, dirname } from "node:path"
 import { fileURLToPath } from 'node:url';
 
+console.time("total-run-time")
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -80,3 +81,4 @@ reports.forEach((el) => {
 })
 
 console.log("Part 2 - Number of OK reports: ", okReportsPart2)
+console.timeEnd("total-run-time")
