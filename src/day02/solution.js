@@ -24,33 +24,29 @@ rows.forEach((row) => {
 function isMonotonous(array) {
     let increasing = null;
     let newIncreasing;
-    for(let i = 0; i < array.length; i++) {
-        if(i > 0) {
-            if(array[i] === array[i -1]) {
-                return false;
-            } else if (array[i] > array[i -1]) {
-                newIncreasing = true;
-            } else if (array[i] < array[i -1]) {
-                newIncreasing = false;
-            }
+    for(let i = 1; i < array.length; i++) {
+        if(array[i] === array[i -1]) {
+            return false;
+        } else if (array[i] > array[i -1]) {
+            newIncreasing = true;
+        } else if (array[i] < array[i -1]) {
+            newIncreasing = false;
+        }
 
-            if(increasing === null) {
-                increasing = newIncreasing;
-            } else if(increasing !== newIncreasing) {
-                return false;
-            }
-        } 
+        if(increasing === null) {
+            increasing = newIncreasing;
+        } else if(increasing !== newIncreasing) {
+            return false;
+        }
     }
     return true;
 }
 
 function isLittleVariation(array) {
-    for(let i = 0; i < array.length; i++) {
-        if(i > 0) {
-            let diff = array[i] - array[i -1];
-            if(Math.abs(diff) > 3) {
-                return false;
-            }
+    for(let i = 1; i < array.length; i++) {
+        let diff = array[i] - array[i -1];
+        if(Math.abs(diff) > 3) {
+            return false;
         }
     }
     return true;
